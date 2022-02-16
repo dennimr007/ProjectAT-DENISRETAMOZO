@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: pink; }
+
+/*Titulos*/
+h2 {
+  margin: 5px;
+  text-align: center; }
+
+h2 {
+  font-family: 'Poppins', italic; }
+
+h2 {
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  margin: 5px 5px 5px 5px;
+  text-align: justify; }
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+.menu {
+  background-color: pink;
+  border: solid 8px white;
+  display: flex;
+  flex-flow: row; }
+  .menu a .logo {
+    margin: 10px 10px 10px 10px;
+    width: 200px;
+    height: 200px; }
+
+.menuNavegacion {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+  padding: 7px;
+  width: 100%; }
+  .menuNavegacion ul .menuBoton {
+    background-image: linear-gradient(to right, #FFAFBD 0%, #ffc3a0 51%, #FFAFBD 100%);
+    margin: 5px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block; }
+    .menuNavegacion ul .menuBoton:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none; }
+
+#gridHome {
+  display: grid;
+  grid-template-areas: "menu menu menu" "titulo titulo titulo" "carousel carousel carousel" "info info info" "info info info" "info info info" "footer footer footer";
+  grid-column-gap: 3px;
+  grid-row-gap: 3px; }
+
+.menu {
+  grid-area: menu; }
+
+.titulo {
+  grid-area: titulo; }
+
+.carousel {
+  grid-area: carousel; }
+
+.slide {
+  width: 95%;
+  margin: 10px;
+  margin: 10px;
+  border-bottom: solid white 4px; }
+
+.info {
+  grid-area: info;
+  margin-top: 20px;
+  margin: 5px;
+  padding: 5px;
+  border-top: 1px solid white; }
+  .info .info1 {
+    display: flex;
+    flex-flow: row; }
+  .info .info2 {
+    display: flex;
+    flex-flow: row; }
+  .info .info3 {
+    display: flex;
+    flex-flow: row; }
+  .info .infoFoto {
+    margin: 5px 5px 5px 5px;
+    padding: 7px 7px 7px 7px;
+    align-self: baseline;
+    width: 25%; }
+  .info .infoTexto {
+    text-align: center; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  font-size: 3vh;
+  margin-top: solid white 3px; }
+  footer .facebookPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px; }
+  footer .instagramPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px; }
+  footer .whatsappPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px; }
